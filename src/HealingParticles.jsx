@@ -43,7 +43,7 @@ export default function HealingParticles() {
                 top: 0,
                 left: 0,
                 width: "100%",
-                height: "100%",
+                height: "100dvh",
                 background: "#000",
                 overflow: "hidden",
                 cursor: phase === "input" ? "default" : (phase === "scattered" ? "pointer" : "none"),
@@ -83,7 +83,7 @@ export default function HealingParticles() {
                     ref={containerRef}
                     style={{
                         width: "100%",
-                        height: "100%",
+                        height: "100dvh",
                         opacity: 0.95,
                     }}
                 />

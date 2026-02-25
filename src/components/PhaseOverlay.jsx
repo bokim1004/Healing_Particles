@@ -127,7 +127,7 @@ export function ScatteredOverlay({ emotionName }) {
         >
             <p style={{
                 color: "rgba(255,255,255,0.7)",
-                fontSize: "14px",
+                fontSize: "18px",
                 letterSpacing: "0.3em",
                 textTransform: "uppercase",
                 margin: 0,
@@ -136,9 +136,10 @@ export function ScatteredOverlay({ emotionName }) {
             </p>
             <p style={{
                 color: "rgba(255,255,255,0.4)",
-                fontSize: "11px",
+                fontSize: "14px",
                 letterSpacing: "0.4em",
                 textTransform: "uppercase",
+                fontWeight: 600,
                 marginTop: "20px",
                 animation: "pulse 2s infinite ease-in-out",
             }}>
@@ -250,7 +251,7 @@ export function PeaceOverlay({ emotionName, emotionData }) {
         >
             <p style={{
                 color: "#ffffff",
-                fontSize: "22px",
+                fontSize: "18px",
                 fontWeight: 200,
                 letterSpacing: "0.5em",
                 margin: "0 0 24px 0",
@@ -258,7 +259,7 @@ export function PeaceOverlay({ emotionName, emotionData }) {
             }}>
                 {emotionData?.positive
                     ? (emotionName || "평화")
-                    : `당신의 ${emotionName}${getSubjectParticle(emotionName)} 흘러갔습니다`
+                    : <>당신의 {emotionName}{getSubjectParticle(emotionName)}<br />흘러갔습니다</>
                 }
             </p>
             {emotionData?.positive && (
