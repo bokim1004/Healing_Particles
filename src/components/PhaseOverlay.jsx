@@ -251,7 +251,7 @@ export function PeaceOverlay({ emotionName, emotionData }) {
         >
             <p style={{
                 color: "#ffffff",
-                fontSize: "18px",
+                fontSize: "16px",
                 fontWeight: 200,
                 letterSpacing: "0.5em",
                 margin: "0 0 24px 0",
@@ -259,7 +259,7 @@ export function PeaceOverlay({ emotionName, emotionData }) {
             }}>
                 {emotionData?.positive
                     ? (emotionName || "평화")
-                    : <>당신의 {emotionName}{getSubjectParticle(emotionName)}<br />흘러갔습니다</>
+                    : <>당신의 {emotionName}{getSubjectParticle(emotionName)}<br />사라졌습니다</>
                 }
             </p>
             {emotionData?.positive && (
